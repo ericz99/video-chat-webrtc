@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "socket-server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,7 +12,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "connect-redis": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "ioredis": "^4.24.4",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^4.0.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.17",

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useContext } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import SocketContext from './context/SocketContext';
+import AppContext from './context/AppContext';
+
+import { FETCH_ROOMS } from './constants';
+
+export default function App(props) {
+    const { socket } = useContext(SocketContext);
+    const { getAllRooms } = useContext(AppContext);
+
+    useEffect(() => {
+        // # listen to client
+        socket.on('connect', () => {
+            console.log('client connected!');
+            console.log(socket.id);
+        });
+
+        return () => {
+            // socket.emit('disconnect');
+            socket.close();
+        };
+    }, [socket]);
+
+    return <div className="h-full w-full bg-gray-900">{props.children}</div>;
 }
-
-export default App;

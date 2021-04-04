@@ -1,0 +1,6 @@
+export const USER_CREATED = 'USER_CREATED';
+export const GENERATE_NEW_ROOM = 'GENERATE_NEW_ROOM';
+export const USER_JOINED = 'USER_JOINED';
+export const UPDATED_MESSAGES = 'UPDATED_MESSAGES';
+export const GET_ALL_ROOMS = 'GET_ALL_ROOMS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
