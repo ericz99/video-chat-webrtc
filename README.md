@@ -14,6 +14,16 @@ yarn run build
 
 ```
 
+## Technology
+
+-   [SimplePeer](https://github.com/feross/simple-peer)
+-   [SocketIO](https://socket.io/)
+-   [React](https://reactjs.org/)
+
+## Template Used
+
+-   [Lerna Workspace Template](https://github.com/ericz99/lerna-workspace-template)
+
 ### Author
 
 Eric Zhang
