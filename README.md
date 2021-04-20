@@ -24,6 +24,10 @@ yarn run build
 
 -   [Lerna Workspace Template](https://github.com/ericz99/lerna-workspace-template)
 
+## Stuff that doesn't work
+
+-   [ ] Muting / Camera Disabled
+
 ### Author
 
 Eric Zhang

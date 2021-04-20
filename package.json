@@ -13,7 +13,8 @@
     "test": "lerna run --parallel test",
     "new-version": "lerna version --conventional-commits --yes",
     "diff": "lerna diff",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "init-server": "set NODE_ENV=production && cd ./packages/socket-server && yarn run start-prod"
   },
   "license": "MIT",
   "devDependencies": {
